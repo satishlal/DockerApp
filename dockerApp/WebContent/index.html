@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="js/retriveData.js"></script>
+<style>
+#mainDiv{
+        text-align: center;
+		display: table-caption;
+		width: 100%;
+		position: absolute;
+		
+}
+#details{
+        height:30px;
+        width:308px;
+        font-size: 15px;
+        border: 0px;
+        border-bottom: 1px solid grey;
+}
+#submitBTN{
+    font-size: 18px;
+    width: 121px;
+    height: 40px;
+    border-radius: 50px;
+    border: 0px;
+    background-color: peru;
+    color:white;
+}
+</style>
+</head>
+<body>
+      <div id="mainDiv">
+      <h1> Save Your Students Details Here</h1>
+      <form action="./InsertData" method="post">
+      	<input id="details" type="text" name="studentName" placeholder="student name" value="" required><br>
+      	<input id="details" type="text" name="className" placeholder="class" value="" required><br>
+      	<input id="details" type="text" name="fees" placeholder="fess" value="" required><br>
+      	<input id="details" type="text" name="fatherName" placeholder="father name" value="" required><br><br><br><br>
+      	<input id="submitBTN" type="submit" value="submit"><br>
+      </form>
+      </div>
+</body>
+</html>
